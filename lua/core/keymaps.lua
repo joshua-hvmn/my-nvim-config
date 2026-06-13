@@ -34,6 +34,9 @@ vim.keymap.set('n', '<leader>e', '<cmd> Neotree toggle position=left<CR>', desc(
 -- Toggle line wrapping
 vim.keymap.set('n', '<leader>lw', '<cmd>set wrap!<CR>', desc(opts, 'Toggle line wrap'))
 
+-- Switch between CarbonFox and DayFox
+vim.keymap.set('n', '<leader>ft', ':FoxToggle<CR>', opts)
+
 -- ==========================================================================
 -- Navigation & Search (Centered Cursor)
 -- ==========================================================================

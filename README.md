@@ -16,7 +16,7 @@ To use, clone this repo, and copy its contents to `~/.config/nvim`
 - nvimtools/none-ls.nvim - Autoformatting
 - lewis6991/gitsigns.nvim - show git changes in gutter
 - lukas-reineke/indent-blankline.nvim - adds vertical lines to show indentation
-- shaunsingh/nord.nvim - color theme
+- EdenEast/nightfox.nvim - color theme
 - goolord/alpha-nvim - improves startup functionality/message
 - 'christoomey/vim-tmux-navigator' - Tmux & split window navigation
 - 'tpope/vim-sleuth' - Detect tabstop and shiftwidth automatically
@@ -25,7 +25,7 @@ To use, clone this repo, and copy its contents to `~/.config/nvim`
 - 'folke/which-key.nvim' - Hints keybinds
 - 'windwp/nvim-autopairs' - Autoclose parentheses, brackets, quotes, etc.
 - 'folke/todo-comments.nvim' - Highlight todo, notes, etc in comments
-- 'norcalli/nvim-colorizer.lua' -- High-performance color highlighter
+- 'catgoose/nvim-colorizer.lua' -- High-performance color highlighter
 
 **NOTE:**
 Requires up to date nvim. If you are using an LTS distro, your package manager may not have the latest version. Use [MordechaiHadad/bob](https://github.com/mordechaihadad/bob) to manage nvim versions.
