@@ -18,12 +18,13 @@ end, { desc = 'Open personal Neovim cheatsheet' })
 -- Switches between carbonfox and dayfox
 vim.api.nvim_create_user_command('ThemeChange', function()
   local themes = require 'core.themes'
+  local messages = require 'core.messages'
 
   if vim.g.colors_name == themes.dark then
     vim.cmd.colorscheme(themes.light)
-    print 'Switched to Dayfox ☀️'
+    print(messages.theme_switched_light)
   else
     vim.cmd.colorscheme(themes.dark)
-    print 'Switched to Carbonfox 🌙'
+    print(messages.theme_switched_dark)
   end
 end, { desc = 'Switch colortheme' })
