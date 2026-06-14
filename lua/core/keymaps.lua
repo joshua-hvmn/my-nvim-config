@@ -20,7 +20,7 @@ end
 vim.keymap.set('n', '<C-s>', '<cmd> w <CR>', opts)
 
 -- Save without auto-formatting
-vim.keymap.set('n', '<leader>Sn', '<cmd>noautocmd w <CR>', desc(opts, 'Save without auto-formatting'))
+vim.keymap.set('n', '<C-s><C-n>', '<cmd>noautocmd w <CR>', desc(opts, 'Save without auto-formatting'))
 
 -- Quit File
 vim.keymap.set('n', '<C-q>', '<cmd> q <CR>', opts)
@@ -35,7 +35,10 @@ vim.keymap.set('n', '<leader>e', '<cmd> Neotree toggle position=left<CR>', desc(
 vim.keymap.set('n', '<leader>lw', '<cmd>set wrap!<CR>', desc(opts, 'Toggle line wrap'))
 
 -- Switch between CarbonFox and DayFox
-vim.keymap.set('n', '<leader>ft', ':FoxToggle<CR>', opts)
+vim.keymap.set('n', '<leader>tc', ':ThemeChange<CR>', opts)
+
+-- Open neovim cheatsheet
+vim.keymap.set('n', '<leader>h', ':MyHelp<CR>', desc(opts, 'Open custom help sheet'))
 
 -- ==========================================================================
 -- Navigation & Search (Centered Cursor)
