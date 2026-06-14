@@ -4,7 +4,7 @@
 -- Custom help menu
 -- Displays keymaps and useful commands
 vim.api.nvim_create_user_command('MyHelp', function()
-  local help_file = vim.fn.stdpath 'config' .. '/my_cheatsheet.md'
+  local help_file = vim.fn.stdpath 'config' .. 'lua/core/my_cheatsheet.md'
 
   vim.cmd('rightbelow vsplit ' .. help_file)
 
@@ -17,7 +17,7 @@ end, { desc = 'Open personal Neovim cheatsheet' })
 -- Toggle between light and dark theme
 -- Switches between carbonfox and dayfox
 vim.api.nvim_create_user_command('ThemeChange', function()
-  local themes = require 'config.themes'
+  local themes = require 'core.themes'
 
   if vim.g.colors_name == themes.dark then
     vim.cmd.colorscheme(themes.light)
