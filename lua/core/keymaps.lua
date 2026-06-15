@@ -17,13 +17,13 @@ end
 -- File Operations
 -- ==========================================================================
 -- Save File
-vim.keymap.set('n', '<C-s>', '<cmd> w <CR>', opts)
+vim.keymap.set('n', '<C-s>', '<cmd> w <CR>', desc(opts, 'Save file'))
 
 -- Save without auto-formatting
 vim.keymap.set('n', '<C-s><C-n>', '<cmd>noautocmd w <CR>', desc(opts, 'Save without auto-formatting'))
 
 -- Quit File
-vim.keymap.set('n', '<C-q>', '<cmd> q <CR>', opts)
+vim.keymap.set('n', '<C-q>', '<cmd> q <CR>', desc(opts, 'Quit file'))
 
 -- ==========================================================================
 -- Plugins & UI
@@ -35,17 +35,17 @@ vim.keymap.set('n', '<leader>e', '<cmd> Neotree toggle position=left<CR>', desc(
 vim.keymap.set('n', '<leader>lw', '<cmd>set wrap!<CR>', desc(opts, 'Toggle line wrap'))
 
 -- Switch between CarbonFox and DayFox
-vim.keymap.set('n', '<leader>tc', ':ThemeChange<CR>', opts)
+vim.keymap.set('n', '<leader>tc', ':ThemeChange<CR>', desc(opts, 'Toggle dark theme'))
 
 -- Open neovim cheatsheet
-vim.keymap.set('n', '<leader>h', ':MyHelp<CR>', desc(opts, 'Open custom help sheet'))
+-- vim.keymap.set('n', '<leader>h', ':MyHelp<CR>', desc(opts, 'Open custom help sheet'))
 
 -- ==========================================================================
 -- Navigation & Search (Centered Cursor)
 -- ==========================================================================
 -- Vertical scroll and center
-vim.keymap.set('n', '<C-d>', '<C-d>zz', opts)
-vim.keymap.set('n', '<C-u>', '<C-u>zz', opts)
+vim.keymap.set('n', '<C-d>', '<C-d>zz', desc(opts, 'Scroll half page down'))
+vim.keymap.set('n', '<C-u>', '<C-u>zz', desc(opts, 'Scroll half page up'))
 
 -- Find and center
 vim.keymap.set('n', 'n', 'nzzzv', opts)
