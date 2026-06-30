@@ -15,6 +15,7 @@ return {
         'prettier', -- ts/js formatter
         'eslint_d', -- ts/js linter
         'shfmt', -- Shell formatter
+        'shellcheck',
         'checkmake', -- linter for Makefiles
         -- 'stylua', -- lua formatter; Already installed via Mason
         -- 'ruff', -- Python linter and formatter; Already installed via Mason
@@ -24,6 +25,7 @@ return {
 
     local sources = {
       diagnostics.checkmake,
+      diagnostics.shellcheck,
       formatting.prettier.with { filetypes = { 'html', 'json', 'yaml', 'markdown' } },
       formatting.stylua,
       formatting.shfmt.with { args = { '-i', '4' } },
@@ -52,3 +54,4 @@ return {
     }
   end,
 }
+
