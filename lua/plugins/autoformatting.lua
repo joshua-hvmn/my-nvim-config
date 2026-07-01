@@ -21,11 +21,11 @@ return {
         -- 'ruff', -- Python linter and formatter; Already installed via Mason
       },
       automatic_installation = true,
+
+      handlers = {},
     }
 
     local sources = {
-      diagnostics.checkmake,
-      diagnostics.shellcheck,
       formatting.prettier.with { filetypes = { 'html', 'json', 'yaml', 'markdown' } },
       formatting.stylua,
       formatting.shfmt.with { args = { '-i', '4' } },
